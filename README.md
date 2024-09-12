@@ -1,7 +1,7 @@
 # Fetch RH Pull-Secret 
 ### This is NOT supported by Red Hat - This was created for my own personal use. Use this code at your own risk.
 
-Use REST API to get RH Pull-Secret \
+Use REST API to get RH Pull-Secret. \
 Requires a Red Hat user account. \
 Used to simplify the solution from KCS4844461 "How to download the pull secret from cloud.redhat.com/openshift/install/pull-secret using a REST API call?" \
 
@@ -15,10 +15,11 @@ Docs:
 
 
 ### How to use. 
+* Get your offline token from https://console.redhat.com/openshift/token, please read https://access.redhat.com/solutions/4844461 for more information.
 ~~~
 $ git clone backchristoffer/get_openshift_pull_secret
 $ cd get_openshift_pull_secret
-$ echo <offline token> > .env
+$ echo 'OFFLINE_ACCESS_TOKEN="offline token"' > .env OR export OFFLINE_ACCESS_TOKEN="offline token"
 $ go build .
 $ ./ocps
 ~~~
