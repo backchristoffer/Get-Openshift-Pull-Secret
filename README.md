@@ -1,5 +1,4 @@
 # Fetch RH Pull-Secret 
-### This is NOT supported by Red Hat - This was created for my own personal use. Use this code at your own risk.
 
 Use REST API to get RH Pull-Secret. \
 Requires a Red Hat user account. \
